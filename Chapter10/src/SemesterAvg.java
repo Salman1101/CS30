@@ -8,9 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 /*
-
 Program: GUI.java          Last Date of this Revision: September,13,2022
-
 Purpose:
 Author: Salman Rahmani 
 School: CHHS
@@ -36,6 +34,7 @@ public class SemesterAvg implements ActionListener {
 	
 		public static void main(String[] args) {
 			
+			// set window size
 			
 			JPanel panel = new JPanel();
 			JFrame frame = new JFrame();
@@ -142,4 +141,3 @@ public class SemesterAvg implements ActionListener {
 	
 	
 	 */
-	
