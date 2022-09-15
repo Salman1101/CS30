@@ -1,8 +1,8 @@
 import javax.swing.*;    
 import java.awt.event.*;    
-public class LatinPlantNames {    
+public class MetricConversion {    
 JFrame f;    
-LatinPlantNames(){    
+MetricConversion(){    
 	
 	
 	
@@ -16,23 +16,24 @@ LatinPlantNames(){
     
     
     final JLabel label = new JLabel();          
-    label.setLocation(49, 100);
+    label.setLocation(26, 100);
     label.setHorizontalAlignment(JLabel.CENTER);  
-    label.setSize(253,20);  
+    label.setSize(276,20);  
     
     // enter button
     JButton b=new JButton("Enter");  
     b.setBounds(227,69,75,20);  
     
     // combo box
-    String PlantNames[]={"Basil","Sage","Lavender","Parsely","Peppermint", "Saffron"};        
-    final JComboBox cb=new JComboBox(PlantNames);    
-    cb.setBounds(49, 69,124,20);    
+    String Conversions[]={"Inch to Centimeter","Feet to Meter","Gallon to Liter","pound to kilogram"};        
+    final JComboBox cb=new JComboBox(Conversions);    
+    cb.setBounds(26, 69,161,20);    
     f.getContentPane().add(cb); f.getContentPane().add(label); f.getContentPane().add(b);    
     f.getContentPane().setLayout(null);    
     
-    JLabel lblSelect = new JLabel("Select a plant name:");
-    lblSelect.setBounds(47, 38, 126, 20);
+    // title
+    JLabel lblSelect = new JLabel("Select a conversion type:");
+    lblSelect.setBounds(26, 38, 161, 20);
     f.getContentPane().add(lblSelect);
     f.setSize(350,198);    
     f.setVisible(true);       
@@ -45,45 +46,34 @@ LatinPlantNames(){
     b.addActionListener(new ActionListener() {  
         public void actionPerformed(ActionEvent e) {    
 
-    
+    // if else statements
    String PlantName = (String) cb.getItemAt(cb.getSelectedIndex()); 
     
-if (PlantName == "Basil") {
+if (PlantName == "Inch to Centimeter") {
 	
-	label.setText("Latin Name: Ocimum");  
-	
-}
-
-else if (PlantName == "Sage") {
-	
-	label.setText("Latin Name: Salvia");  
+	label.setText("1 inch = 2.54 Centimeters");  
 	
 }
 
-else if (PlantName == "Lavender") {
+else if (PlantName == "Feet to Meter") {
 	
-	label.setText("Latin Name: Lavandula Spica");  
+	label.setText("1 Foot = 0.3048 Meters");  
+	
+}
+
+else if (PlantName == "Gallon to Liter") {
+	
+	label.setText("1 Gallon = 4.5461 Liters");  
 	
 }
 
 
-else if (PlantName == "Parsely") {
+else if (PlantName == "pound to kilogram") {
 	
-	label.setText("Latin Name: Apium");  
-	
-}
-
-else if (PlantName == "Peppermint") {
-	
-	label.setText("Latin Name: Mentha Piperita");  
+	label.setText("1 Pound = 0.4536 kilograms");  
 	
 }
 
-else if (PlantName == "Saffron") {
-	
-	label.setText("Latin Name: Crocus");  
-	
-}
 
 
 
@@ -91,6 +81,6 @@ else if (PlantName == "Saffron") {
 });           
 }    
 public static void main(String[] args) {    
-    new LatinPlantNames();         
+    new MetricConversion();         
 }    
 }    	
