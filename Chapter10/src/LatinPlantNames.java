@@ -1,13 +1,35 @@
 import javax.swing.*;    
+
+
+
+
+
+
+/*
+Program: GUI.java          Last Date of this Revision: September,16,2022
+Purpose:
+Author: Salman Rahmani 
+School: CHHS
+Course: Computer Programming 30 
+ 
+*/
+
+
+
+
+
 import java.awt.event.*;    
-public class LatinPlantNames {    
+public class LatinPlantNames {  
+	
+	
+	
+	
 JFrame f;    
 LatinPlantNames(){    
 	
 	
 	
-	
-    f=new JFrame("LatinPlantNames");   
+	f=new JFrame("LatinPlantNames");   
     
     
     

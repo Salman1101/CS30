@@ -1,13 +1,30 @@
 import javax.swing.*;    
+
+
+
+
+
+
+/*
+Program: GUI.java          Last Date of this Revision: September,15,2022
+Purpose:
+Author: Salman Rahmani 
+School: CHHS
+Course: Computer Programming 30 
+ 
+*/
+
+
+
+
+
+
 import java.awt.event.*;    
 public class MetricConversion {    
+	
 JFrame f;    
 MetricConversion(){    
-	
-	
-	
-	
-    f=new JFrame("LatinPlantNames");   
+f=new JFrame("LatinPlantNames");   
     
     
     

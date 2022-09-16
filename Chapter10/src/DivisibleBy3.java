@@ -57,10 +57,18 @@ public class DivisibleBy3 implements ActionListener {
 
 	
 	//Enter button
-			button = new JButton("Enter");
-			button.setBounds(174, 50, 80, 25);
-			button.addActionListener(new DivisibleBy3());
-			panel.add(button);
+			  {
+				    JFrame frame = new JFrame("ActionListener Example");
+				    JButton btn = new JButton("Click here");
+				    btn.setBounds(70,80,100,30);
+				    //Change button text on click
+				    btn.addActionListener(new ActionListener() {
+				       public void actionPerformed(ActionEvent ae) {
+				                      btn.setText("PLay Again");
+				       }
+				    }
+				    
+			  }
 
 	// text output
 			output = new JLabel("");
